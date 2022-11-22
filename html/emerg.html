@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/emerg.css">
+    <script src="../js/emerg.js" defer></script>
+    <title>Emergência</title>
+    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon">
+    <script>
+    // Senha em prompti para acessar a página
+        // let prompti = window.prompt("Digite a senha para acessar a página.")
+        // if (prompti == 'adulto1') {
+        // }
+        // else {
+        //     window.alert("Acesso negado!")
+        //     window.location.href = "index.html"
+        // }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="no-print">
+            <a id="logo" href="" class="only-print">FG.Torrent</a>
+            <ul>
+                <li id="planos"><a href="index.html">Planos</a></li>
+                <li id="termos"><a href="termos.html">Termos</a></li>
+                <li id="guias"><a href="guias.html">Guias</a></li>
+                <li><a href="">Ramais</a></li>
+                <li id="sites"><a href="sites.html">Sites</a></li>
+                <li id="editaveis"><a href="editaveis.html">Editáveis</a></li>
+                <li id="emerg"><a href="emerg.html">Emerg</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="opcoes no-print">
+        <abbr title="Salvar"><img class="salvar" src="../imagens/salvar.png" alt="" onclick="salvar()"></abbr>
+        <abbr title="Imprimir"><img class="print" src="../imagens/print.png" alt="" onclick="print()"></abbr>
+        <abbr title="Limpar"><img class="limpar" onclick="preLimpar()" src="../imagens/limpar.png" alt=""></abbr>
+        <p>_______</p>
+    </div>
+    <main class="only-print">
+        <div id="box1" class="box">
+            <h4>Box 01</h4>
+            <textarea spellcheck="false" name="diag1" id="diag" cols="30" rows="1" placeholder="Diagnóstico:"></textarea spellcheck="false">
+            <input type="text" name="nome1" id="nome" placeholder="Nome:" > 
+                <p>Rastreio:
+                <select name="ras1" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected ></option>
+                </select></p>
+                <p>Prescrição:
+                <select name="pres1" id="" >
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+                <p>Reconciliação:
+                <select name="rec1" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+                <p>Requer Internação:
+                <select name="int1" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <textarea spellcheck="false" name="obs1" class="obs" cols="30" rows="10"></textarea spellcheck="false">
+            <input type="text" class="idade" id="idade01" placeholder="Idade:">
+            <br>
+            <input type="text" class="quarto" id="quarto01" placeholder="Quarto:">
+        </div>
+
+            <div id="box2" class="box">
+                <h4>Box 02</h4>
+                <textarea spellcheck="false" name="diag2" id="diag" cols="30" rows="1" placeholder="Diagnóstico:"></textarea spellcheck="false">
+                <input type="text" id="nome" name="nome2" placeholder="Nome:">
+           
+                <p>Rastreio:
+                    <select name="ras2" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <p>Prescrição:
+                <select name="pres2" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <p>Reconciliação:
+                <select name="rec2" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <p>Requer Internação:
+                <select name="int2" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <textarea spellcheck="false" name="obs2" class="obs" cols="30" rows="10"></textarea spellcheck="false">
+            <input type="text" class="idade" id="idade02" placeholder="Idade:">
+            <br>
+            <input type="text" class="quarto" id="quarto02" placeholder="Quarto:">
+        </div>
+
+        <div id="box3" class="box">
+            <h4>Box 03</h4>
+            <textarea spellcheck="false" name="diag3" id="diag" cols="30" rows="1" placeholder="Diagnóstico:"></textarea spellcheck="false">
+            <input type="text" id="nome" name="nome3" placeholder="Nome:">
+            <p>Rastreio:
+            <select name="ras3" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <p>Prescrição:
+                <select name="pres3" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <p>Reconciliação:
+                <select name="rec3" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <p>Requer Internação:
+                <select name="int3" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <textarea spellcheck="false" name="obs3" class="obs" cols="30" rows="10"></textarea spellcheck="false">
+            <input type="text" class="idade" id="idade03" placeholder="Idade:">
+            <br>
+            <input type="text" class="quarto" id="quarto03" placeholder="Quarto:">
+        </div>
+
+        <div id="box4" class="box">
+            <h4>Box 04</h4>
+            <textarea spellcheck="false" name="diag4" id="diag" cols="30" rows="1" placeholder="Diagnóstico:"></textarea spellcheck="false">
+            <input type="text" id="nome" name="nome4" placeholder="Nome:">
+            <p>Rastreio:
+            <select name="ras4" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <p>Prescrição:
+                <select name="pres4" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <p>Reconciliação:
+                <select name="rec4" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <p>Requer Internação:
+                <select name="int4" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <textarea spellcheck="false" name="obs4" class="obs" cols="30" rows="10"></textarea spellcheck="false">
+            <input type="text" class="idade" id="idade04" placeholder="Idade:">
+            <br>
+            <input type="text" class="quarto" id="quarto04" placeholder="Quarto:">
+        </div>
+
+        <div id="box5" class="box">
+            <h4>Box 05</h4>
+            <textarea spellcheck="false" name="diag5" id="diag" cols="30" rows="1" placeholder="Diagnóstico:"></textarea spellcheck="false">
+            <input type="text" id="nome" name="nome5" placeholder="Nome:">
+            <p>Rastreio:
+                <select name="ras5" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <p>Prescrição:
+                <select name="pres5" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <p>Reconciliação:
+                <select name="rec5" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <p>Requer Internação:
+                <select name="int5" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <textarea spellcheck="false" name="obs5" class="obs" cols="30" rows="10"></textarea spellcheck="false">
+            <input type="text" class="idade" id="idade05" placeholder="Idade:">
+            <br>
+            <input type="text" class="quarto" id="quarto05" placeholder="Quarto:">
+        </div>
+
+        <div id="box6" class="box">
+            <h4>Box 06</h4>
+            <textarea spellcheck="false" name="diag6" id="diag" cols="30" rows="1" placeholder="Diagnóstico:"></textarea spellcheck="false">
+            <input type="text" id="nome" name="nome6" placeholder="Nome:">
+            <p>Rastreio:
+                <select name="ras6" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <p>Prescrição:
+                <select name="pres6" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <p>Reconciliação:
+                <select name="rec6" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <p>Requer Internação:
+                <select name="int6" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <textarea spellcheck="false" name="obs6" class="obs" cols="30" rows="10"></textarea spellcheck="false">
+            <input type="text" class="idade" id="idade06" placeholder="Idade:">
+            <br>
+            <input type="text" class="quarto" id="quarto06" placeholder="Quarto:">
+        </div>
+
+        <div id="box7" class="box">
+            <h4>Box 07</h4>
+            <textarea spellcheck="false" name="diag7" id="diag" cols="30" rows="1" placeholder="Diagnóstico:"></textarea spellcheck="false">
+            <input type="text" id="nome" name="nome7" placeholder="Nome:">
+            <p>Rastreio:
+                <select name="ras7" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <p>Prescrição:
+                <select name="pres7" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <p>Reconciliação:
+                <select name="rec7" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <p>Requer Internação:
+                <select name="int7" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <textarea spellcheck="false" name="obs7" class="obs" cols="30" rows="10"></textarea spellcheck="false">
+            <input type="text" class="idade" id="idade07" placeholder="Idade:">
+            <br>
+            <input type="text" class="quarto" id="quarto07" placeholder="Quarto:">
+        </div>
+
+        <div id="box8" class="box">
+            <h4>Box 08</h4>
+            <textarea spellcheck="false" name="diag8" id="diag" cols="30" rows="1" placeholder="Diagnóstico:"></textarea spellcheck="false">
+            <input type="text" id="nome" name="nome8" placeholder="Nome:">
+           
+            <p>Rastreio:
+                <select name="ras8" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select> </p>
+            <p>Prescrição:
+                <select name="pres8" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <p>Reconciliação:
+                <select name="rec8" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <p>Requer Internação:
+                <select name="int8" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <textarea spellcheck="false" name="obs8" class="obs" cols="30" rows="10"></textarea spellcheck="false">
+            <input type="text" class="idade" id="idade08" placeholder="Idade:">
+            <br>
+            <input type="text" class="quarto" id="quarto08" placeholder="Quarto:">
+        </div>
+
+        <div id="box9" class="box">
+            <h4>Box 09</h4>
+            <textarea spellcheck="false" name="diag9" id="diag" cols="30" rows="1" placeholder="Diagnóstico:"></textarea spellcheck="false">
+            <input type="text" id="nome" name="nome9" placeholder="Nome:">
+            <p>Rastreio:
+                <select name="ras9" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <p>Prescrição:
+                <select name="pres9" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <p>Reconciliação:
+                <select name="rec9" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <p>Requer Internação:
+                <select name="int9" id="">
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                    <option value="nd" selected></option>
+                </select></p>
+            <textarea spellcheck="false" name="obs9" class="obs" cols="30" rows="10" id="obs09"></textarea spellcheck="false">
+            <input type="text" class="idade" id="idade09" placeholder="Idade:">
+            <br>
+            <input type="text" class="quarto" id="quarto09" placeholder="Quarto:">
+        </div>
+
+            <div id="box10" class="box">
+                <h4>Trauma</h4>
+                <textarea spellcheck="false" name="diag10" id="diag" cols="30" rows="1" placeholder="Diagnóstico:"></textarea spellcheck="false">
+                <input type="text" id="nome" name="nome10" placeholder="Nome:">
+                <p>Rastreio:
+                    <select name="ras10" id="">
+                        <option value="1">Sim</option>
+                        <option value="0">Não</option>
+                        <option value="nd" selected></option>
+                    </select></p>
+                <p>Prescrição:
+                    <select name="pres10" id="">
+                        <option value="1">Sim</option>
+                        <option value="0">Não</option>
+                        <option value="nd" selected></option>
+                    </select></p>
+                <p>Reconciliação:
+                    <select name="rec10" id="">
+                        <option value="1">Sim</option>
+                        <option value="0">Não</option>
+                        <option value="nd" selected></option>
+                    </select></p>
+                <p>Requer Internação:
+                    <select name="int10" id="">
+                        <option value="1">Sim</option>
+                        <option value="0">Não</option>
+                        <option value="nd" selected></option>
+                    </select></p>
+                <textarea spellcheck="false" name="obs10" class="obs" cols="30" rows="10" id="obs10"></textarea spellcheck="false">
+                <input type="text" class="idade" id="idade10" placeholder="Idade:">
+                <br>
+                <input type="text" class="quarto" id="quarto10" placeholder="Quarto:">
+            </div>
+        </div>
+        <div class="confirma">
+            <div class="quadrado">
+                <P>Você deseja limpar todo o conteudo da página ?</P>
+                <br><br>
+                <div class="botoes">
+                    <input type="button" value="Limpar" onclick="limpar()">
+                    <input type="button" id="limpa" value="Cancelar" onclick="cancelar()">
+                </div>
+            </divq>
+        </div>
+    </main>
+
+    
+</body>
+<style>
+    
+    @media print{
+        * {
+            margin: 0;
+            overflow: hidden;
+        }
+        .no-print{
+            display: none;
+        }
+        ::placeholder{
+        color: rgba(255, 255, 255, 0);
+        }
+        .box {
+            transform: scale(0.9);
+            width: 549px;
+            margin: 0;
+            margin-left: -1px;
+            margin-top: -8px;
+           
+            page-break-after: avoid;
+           
+        }
+        .only-print {
+            position: absolute;
+            top: -40px;
+            left: -35px;
+            transform: scale(0.9);
+            margin: 0;
+            width: 1120px;
+            height: 790px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            page-break-inside: avoid;
+        }
+    
+        @page {
+            margin-top: 25px;
+            width: 1123px;
+            height: 792px;
+        }
+       
+    }
+
+    
+</style>
+</html>

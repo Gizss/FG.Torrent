@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/guias.css">
+    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a id="logo" href="">FG.Torrent</a>
+            <ul id="navList">
+                <li id="planos"><a href="index.html">Planos</a></li>
+                <li id="termos"><a href="termos.html">Termos</a></li>
+                <li id="guias"><a href="">Guias</a></li>
+                <li><a href="">Ramais</a></li>
+                <li id="sites"><a href="sites.html">Sites</a></li>
+                <li id="editaveis"><a href="editaveis.html">Editáveis</a></li>
+                <li id="emerg"><a href="emerg.html">Emerg</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="guia">
+            <Label>Plano:</Label>
+            <select name="" id="plano">
+                <option value="amil">Amil</option>
+                <option value="assim" disabled>Assim</option>
+                <option value="caberj">Caberj</option>
+                <option value="fio">Fio Saúde</option>
+                <option value="golden">Golden</option>
+                <option value="petrobras">Petrobras</option>
+
+
+            </select>
+            <br><br>
+            <input type="text" name="" id="guia" placeholder="Nº de Guia">
+            <input type="text" name="" id="senha" placeholder="Senha">
+            <br><br>
+            <input type="text" name="" id="carteira" placeholder="Nº da Carteirinha">
+            <br><br>
+            <input type="text" name="" id="nome" placeholder="Nome">
+            <br><br>
+            <input type="text" name="" id="medico" placeholder="Nome do Médico">
+            <input type="text" name="" id="crm" placeholder="CRM">
+            <br><br>
+            <Label>Tipo de internação:</Label>
+            <select name="tipoInternacao" id="tipo">
+                <option value="1">Clínico</option>
+                <option value="2">Cirúrgico</option>
+                <option value="4">Pediátrico</option>
+            </select>
+            <br><br>
+            <Label>Caráter:</Label>
+            <select name="" id="carater">
+                <option value="U">Urgência</option>
+                <option value="E">Eletivo</option>
+            </select>
+            <Label>Acomodação:</Label>
+            <select name="" id="leito">
+                <option value="Apt">Quarto</option>
+                <option value="Enf">Enfermaria</option>
+                <option value="UTI">UTI</option>
+            </select>
+            <br><br>
+            <input type="text" name="" id="proced1" onkeyup="room()" placeholder="Cód. Procedimento 1">
+            <Label>Qtd</Label>
+            <input type="number" name="" id="qtd1">
+            <br>
+            <input type="text" name="" id="proced2" placeholder="Cód. Procedimento 2">
+            <Label>Qtd</Label>
+            <input type="number" name="" id="qtd2">
+            <br>
+            <input type="text" name="" id="proced3" placeholder="Cód. Procedimento 3">
+            <Label>Qtd</Label>
+            <input type="number" name="" id="qtd3">
+            <br>
+            <input type="text" name="" id="proced4" placeholder="Cód. Procedimento 4">
+            <Label>Qtd</Label>
+            <input type="number" name="" id="qtd4">
+            <br>
+            <input type="text" name="" id="proced5" placeholder="Cód Procedimento 5">
+            <Label>Qtd</Label>
+            <input type="number" name="" id="qtd5">
+            <br><br>
+            <input type="button" id="gerar" value="Gerar Guia" onclick="gerar()">
+        </div>
+    </main>
+</body>
+<script src="../js/guias.js"></script>
+
+
+<!--     <div class="guia">
+        <Label>Plano:</Label>
+        <select name="" id="plano">
+            <option value="amil">Amil</option>
+            <option value="petro">Petrobras</option>
+        </select>
+        <br><br>
+        <label for="guia">Guia</label>
+        <input type="text" name="" id="guia">
+        <label for="senha">Senha</label>
+        <input type="text" name="" id="senha">
+        <br><br>
+        <label for="carteira">Nº Carteira</label>
+        <input type="number" name="" id="carteira">
+        <br><br>
+        <label for="nome">Nome</label>
+        <input type="text" name="" id="nome">
+        <br><br>
+        <label for="medico">Médico</label>
+        <input type="text" name="" id="medico">
+        <label for="crm">CRM</label>
+        <input type="number" name="" id="crm">
+        <br><br>
+        <Label>Tipo de internação:</Label>
+        <select name="tipoInternacao" id="tipo">
+            <option value="1">Clínico</option>
+            <option value="2">Cirúrgico</option>
+            <option value="4">Pediátrico</option>
+        </select>
+        <br><br>
+        <Label>Caráter:</Label>
+        <select name="" id="carater">
+            <option value="u">Urgência</option>
+            <option value="e">Eletivo</option>
+        </select>
+        <Label>Acomodação:</Label>
+        <select name="" id="acomdacao">
+            <option value="apt">Quarto</option>
+            <option value="enf">Enfermaria</option>
+            <option value="uti">UTI</option>
+        </select>
+        <br><br>
+        <label for="proced1">Código</label>
+        <input type="text" name="" id="proced1">
+        <label for="quant">Qtd</label>
+        <input type="number" name="" id="quant1">
+        <br><br>
+        <label for="proced2">Código</label>
+        <input type="text" name="" id="proced2">
+        <label for="quant">Qtd</label>
+        <input type="number" name="" id="quant2">
+        <br><br><br>
+        <input type="button" value="Gerar Guia" onclick="gerar()">
+    </div> -->

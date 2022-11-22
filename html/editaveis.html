@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/editaveis.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a id="logo" href="">FG.Torrent</a>
+            <ul id="navList">
+                <li id="planos"><a href="index.html">Planos</a></li>
+                <li id="termos"><a href=''>Termos</a></li>
+                <li id="guias"><a href="guias.html">Guias</a></li>
+                <li><a href="">Ramais</a></li>
+                <li id="sites"><a href="sites.html">Sites</a></li>
+                <li id="editaveis"><a href="">Editáveis</a></li>
+                <li id="emerg"><a href="emerg.html">Emerg</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="print">
+        <div class="texto">
+        <textarea id="conteudo" maxlength="15"></textarea>
+        </div>
+        <div class="papel only-print">
+            <img src="../imagens/logochn.png" alt="">
+            <div id="borda"></div>
+            <div class="break"></div>
+
+            <footer>
+                Centro - Niterói - RJ | (21) 2729-1000 | chniteroi.com.br
+            </footer>
+        </div>
+        
+    </main>
+    <script src="../ckeditor/build/ckeditor.js"></script>
+		<script>ClassicEditor
+				.create( document.querySelector( '#conteudo' ), {
+					
+					licenseKey: '',
+					
+					
+					
+				} )
+				.then( editor => {
+					window.editor = editor;
+			
+					
+					
+					
+				} )
+				.catch( error => {
+					console.error( 'Oops, something went wrong!' );
+					console.error( 'Please, report the following error on https://github.com/ckeditor/ckeditor5/issues with the build id and the error stack trace:' );
+					console.warn( 'Build id: dr572fjmpvz7-5t0s86kuffaj' );
+					console.error( error );
+				} );
+		</script>
+    
+</body>
+</html>

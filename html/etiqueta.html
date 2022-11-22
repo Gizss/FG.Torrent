@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/etiqueta.css">
+    <script src="emerg.js"></script>
+    <title>Document</title>
+    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon">
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="no-print">
+            <a id="logo" href="" class="only-print">FG.Torrent</a>
+            <ul>
+                <li id="planos"><a href="index.html">Planos</a></li>
+                <li id="termos"><a href="termos.html">Termos</a></li>
+                <li id="guias"><a href="guias.html">Guias</a></li>
+                <li id="etiqueta"><a href="etiqueta.html">Etiqueta</a></li>
+                <li id="sites"><a href="sites.html">Sites</a></li>
+                <li id="editaveis"><a href="editaveis.html">Editáveis</a></li>
+                <li id="emerg"><a href="emerg.html">Emerg</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="no-print">Gerador de Etiquetas</h2>
+        <div class="etiqueta only-print">
+            <div class="logo">
+                <img src="../imagens/logochn.png" alt="">
+            </div>
+            <div class="conteudo">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Escrever..."></textarea>
+            </div>
+        </div>
+        <input type="button" value="Imprimir" class="no-print" onclick="print()">
+    </main>
+</body>
+<style>
+    @media print {
+        .no-print {
+            display: none;
+        }
+
+        .etiqueta {
+            position: absolute;
+            left: -50%;
+            right: -50%;
+            top: 3px;
+            box-shadow: none;
+        }
+
+        @page {
+            margin: 0;
+            width: 302px;
+            height: 109px;
+        }
+    }
+</style>
+
+</html>

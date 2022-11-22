@@ -1,0 +1,186 @@
+* {
+    margin: 0 auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body {
+    background-color: #edeef0;
+}
+
+a {
+    color: rgba(82, 82, 82, 0.918);
+    text-decoration: none;
+}
+
+/* Menu */
+#logo {
+    font-weight: 450;
+    color: #396ba3;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: 300ms;
+}
+
+#logo:hover {
+    transform: scale(1.1);
+    opacity: 0.7;
+}
+
+nav {
+    padding-top: 4px;
+    z-index: 2;
+    position: fixed;
+    top: -10px;
+    left: -7px;
+    width: 101vw;
+    min-width: 925px;
+    display: flex;
+    justify-content: space-around;
+    background: #e3e5e8;
+    align-items: center;
+    height: 75px;
+    box-shadow: 0px 1px 1px rgba(2, 2, 2, 0.248);
+    margin-bottom: 80px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    font-weight: 500;
+    display: flex;
+    letter-spacing: 2px;
+    height: 76px;
+    width: 95px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    text-align: center;
+    align-items: center;
+    border-left: 1px solid rgb(211, 211, 211);
+}
+
+li:hover {
+    transition: 200ms;
+    border-bottom: 2px solid rgb(77, 113, 192);
+    opacity: 0.7;
+}
+
+#sites a {
+    color: rgb(77, 113, 192);
+    font-weight: 600;
+}
+
+#sites {
+    border-bottom: 2px solid rgb(77, 113, 192);
+
+}
+
+#planos {
+    border-left: none;
+}
+
+main {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.site {
+    border: 1px solid rgba(0, 0, 0, 0.257);
+    height: 250px;
+    width: 200px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    transition: 400ms;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.342);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+ .site:hover {
+    box-shadow: none;
+    transition: 200ms;
+}
+.acesso p {
+    opacity: 0;
+    transition: 600ms;
+}
+.acesso:hover p {
+    opacity: 1;
+    transition: 600ms;
+}
+.acesso {
+    
+    text-align: center;
+    border-radius: 7px;
+    height: 100%;
+    transition: 600ms;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.87);
+    padding-top: 90px;
+}
+.acesso:hover {
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.398);
+    transition: 600ms;
+}
+.acesso:hover h3 {
+    background: rgba(0, 0, 0, 0);
+    transition: 300ms;
+    transform: scale(1.5);
+}
+h3 {
+    margin-top: 10px;
+    padding-top: 20px;
+    height: 20%;
+    color: #5382b9;
+    background: #f3f3f3;
+    transition: 900ms;
+}
+
+.site1 {
+    background: url('../imagens/sisqual.png') no-repeat center 40px #fff;
+    background-size: 190px 100px;
+}
+
+.site2 {
+    background: url('../imagens/workplace.png') no-repeat center 40px #fff;
+    background-size: 200px 100px;
+}
+
+.site3 {
+    background: url('../imagens/pulses.png') no-repeat center 20px #fff;
+    background-size: 260px 150px;
+}
+
+
+.site4 {
+    background: url('../imagens/multitone.png') no-repeat center 20px #fff;
+    background-size: 150px 150px;
+}
+
+.site5 {
+    background: url('../imagens/dasa.png') no-repeat center 80px #fff;
+    background-size: 150px 40px;
+}
+
+
+.site6 {
+    background: url('../imagens/integra.png') no-repeat center 70px #fff;
+    background-size: 180px 65px;
+}
+
+.site7 {
+    background: url('../imagens/green.png') no-repeat center 30px #fff;
+    background-size: 150px 150px;
+}
+
+.site8 {
+    background: url('../imagens/alterarSenha.png') no-repeat center 30px #fff;
+    background-size: 150px 150px;
+}
